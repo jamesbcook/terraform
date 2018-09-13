@@ -12,10 +12,11 @@ digital-ocean/cobaltstrike-server/*
 
 !aws/docker-install/aws.tf
 !aws/docker-install/outputs.tf
-!aws/plane-bypass/do.tf
+!aws/plane-bypass/aws.tf
 !aws/plane-bypass/outputs.tf
-!aws/cobaltstrike-server/do.tf
+!aws/cobaltstrike-server/aws.tf
 !aws/cobaltstrike-server/outputs.tf
+!aws/cobaltstrike-server/manifests
 
 !digital-ocean/docker-install/do.tf
 !digital-ocean/docker-install/outputs.tf
@@ -23,4 +24,5 @@ digital-ocean/cobaltstrike-server/*
 !digital-ocean/plane-bypass/outputs.tf
 !digital-ocean/cobaltstrike-server/do.tf
 !digital-ocean/cobaltstrike-server/outputs.tf
+!digital-ocean/cobaltstrike-server/manifests
 
