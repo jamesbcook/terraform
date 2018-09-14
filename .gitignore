@@ -1,5 +1,6 @@
 secrets.tfvars
 
+aws/api-gateway/*
 aws/docker-install/*
 aws/plane-bypass/*
 aws/cobaltstrike-server/*
@@ -10,6 +11,8 @@ digital-ocean/cobaltstrike-server/*
 
 !.gitignore
 
+!aws/api-gateway/aws.tf
+!aws/api-gateway/outputs.tf
 !aws/docker-install/aws.tf
 !aws/docker-install/outputs.tf
 !aws/plane-bypass/aws.tf
