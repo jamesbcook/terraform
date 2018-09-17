@@ -1,7 +1,7 @@
 
 class letsencrypt(String $domain) {
 
-  if $domain == undef {
+  if $domain == '' {
     fail('Missing Domain Name')
   }
 

@@ -39,5 +39,6 @@
 * cobaltstrike-server
   * downloads and updates cobaltstrike
   * puppet is used to install cobaltstrike. You'll need to add your license key to the default.pp file under manifests.
+  * puppet is used to install letsencrypt and configure the java keystore. You'll need to add your DNS name to the default.pp file under manifests.
 * api-gateway
   * starts an aws api gateway endpoint, pointing to an uri assigned in the terraform file.
