@@ -55,8 +55,7 @@ resource "aws_instance" "cobaltstrike" {
       "wget -O /tmp/puppet5-release-xenial.deb https://apt.puppetlabs.com/puppet5-release-xenial.deb",
       "sudo dpkg -i /tmp/puppet5-release-xenial.deb",
       "sudo apt update",
-      "sudo apt install -y apt-transport-https ca-certificates curl default-jre software-properties-common puppet-agent",
-      "sudo /opt/puppetlabs/bin/puppet apply --modulepath=/home/ubuntu/manifests/modules/ /home/ubuntu/manifests/default.pp"
+      "sudo apt install -y puppet-agent"
     ]
   }
 }

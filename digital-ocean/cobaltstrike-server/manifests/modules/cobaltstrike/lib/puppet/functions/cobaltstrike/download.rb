@@ -12,7 +12,6 @@ Puppet::Functions.create_function(:'cobaltstrike::download') do
   end
 
   def download(key, output)
-    return if key == ''
     token = gettoken(key)
     uri = URI("https://www.cobaltstrike.com/downloads/#{token}/cobaltstrike-trial.tgz")
     resp = Net::HTTP.get(uri)

@@ -31,8 +31,7 @@ resource "digitalocean_droplet" "cobaltstrike" {
         "wget -O /tmp/puppet5-release-trusty.deb https://apt.puppetlabs.com/puppet5-release-trusty.deb",
         "dpkg -i /tmp/puppet5-release-trusty.deb",
         "apt-get update",
-        "apt-get install -y apt-transport-https ca-certificates curl default-jre software-properties-common puppet-agent",
-        "/opt/puppetlabs/bin/puppet apply --modulepath=/root/manifests/modules/ /root/manifests/default.pp"
+        "apt-get install -y puppet-agent",
       ]
   }
 }
